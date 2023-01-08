@@ -1,10 +1,10 @@
+
 fun main() {
-    val message = "Starting to make a coffee\n" +
-            "Grinding coffee beans\n" +
-            "Boiling water\n" +
-            "Mixing boiled water with crushed coffee beans\n" +
-            "Pouring coffee into the cup\n" +
-            "Pouring some milk into the cup\n" +
-            "Coffee is ready!"
-    println(message)
+    // Ingredients required per cup of coffee
+    val waterReqd = 200
+    val milkReqd = 50
+    val coffeeBeansReqd = 15
+    println("Write how many cups of coffee you will need:")
+    val numCups = readln().toInt()
+    println("For $numCups cups of coffee you will need:\n${numCups * waterReqd} ml of water\n${numCups * milkReqd} ml of milk\n${numCups * coffeeBeansReqd} g of coffee beans")
 }
